@@ -19,6 +19,8 @@ namespace GestaoOcorrencias.WebApi
 
         public virtual DbSet<Cliente> Clientes { get; set; }
 
+        public virtual DbSet<Ocorrencia> Ocorrencias { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cliente>()
